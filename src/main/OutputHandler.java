@@ -41,7 +41,7 @@ public class OutputHandler {
     }
 
     private static void displayDealerHandClosed(Player dealer) {
-        System.out.printf(" The dealer's current hand:%n[Hole card]%n[%s]%n%n", dealer.getHand().get(0).toString());
+        System.out.printf(" The dealer's current hand:%n [Hole card]%n [%s]%n%n", dealer.getHand().get(0).toString());
         System.out.printf(" The dealer's shown value is: %s%n", dealer.getHand().get(0).getValue());
     }
 
