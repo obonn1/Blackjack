@@ -1,4 +1,5 @@
 package main;
+
 /**
  * This class handles all text output to the player.
  */
@@ -9,12 +10,12 @@ public class OutputHandler {
 
     public static void displayStartMenu() {
         System.out.println("\n\n\n");
-        System.out.println("       MAIN MENU");
-        System.out.println("+++++++++++++++++++++++");
-        System.out.println("1. Start Game");
-        System.out.println("2. Read Instructions");
-        System.out.println("3. Close Game");
-        System.out.print("\nPlease make a selection: ");
+        System.out.println("        MAIN MENU");
+        System.out.println(" +++++++++++++++++++++++");
+        System.out.println(" 1. Start Game");
+        System.out.println(" 2. Read Instructions");
+        System.out.println(" 3. Close Game");
+        System.out.print("\n Please make a selection: ");
     }
 
     public static void displayInstructions() {
@@ -34,81 +35,81 @@ public class OutputHandler {
     }
 
     public static void displayStartGame(Player dealer) {
-        System.out.println("\n\nThe cards are dealt and the game has begun.\n");
+        System.out.println("\n\n The cards are dealt and the game has begun.\n");
         displayDealerHandClosed(dealer);
         System.out.println("");
     }
 
     private static void displayDealerHandClosed(Player dealer) {
-        System.out.printf("The dealer's current hand:%n[Hole card]%n[%s]%n%n", dealer.getHand().get(0).toString());
-        System.out.printf("The dealer's shown value is: %s%n", dealer.getHand().get(0).getValue());
+        System.out.printf(" The dealer's current hand:%n[Hole card]%n[%s]%n%n", dealer.getHand().get(0).toString());
+        System.out.printf(" The dealer's shown value is: %s%n", dealer.getHand().get(0).getValue());
     }
 
     public static void displayPlayerHand(Player player1) {
-        System.out.println("\nYour current hand:");
+        System.out.println("\n Your current hand:");
         for (Card card : player1.getHand()) {
-            System.out.printf("[%s]%n", card.toString());
+            System.out.printf(" [%s]%n", card.toString());
         }
-        System.out.println("\nYour hand's value: " + player1.getHandValue());
+        System.out.println("\n Your hand's value: " + player1.getHandValue());
         System.out.println("");
     }
 
     public static void displayHitStand() {
-        System.out.println("Enter 1 to Stand. Enter 2 to Hit.\n");
+        System.out.println(" Enter 1 to Stand. Enter 2 to Hit.\n");
     }
 
     public static void displayPlayerBust() {
-        System.out.println("Bust! Dealer wins. Better luck next time!");
+        System.out.println(" Bust! Dealer wins. Better luck next time!");
     }
 
     public static void announceDealerTurn() {
-        System.out.println("It's now the dealer's turn and they reveal the hole card.");
+        System.out.println(" It's now the dealer's turn and they reveal the hole card.");
     }
 
     public static void displayDealerHandOpen(Player dealer) {
-        System.out.println("\nDealer's current hand:");
+        System.out.println("\n Dealer's current hand:");
         for (Card card : dealer.getHand()) {
-            System.out.printf("[%s]%n", card.toString());
+            System.out.printf(" [%s]%n", card.toString());
         }
-        System.out.println("\nDealer's hand value: " + dealer.getHandValue());
-        System.out.println("");
+        System.out.println("\n Dealer's hand value: " + dealer.getHandValue());
+        System.out.println(" ");
     }
 
     public static void displayPlayerWin() {
-        System.out.println("Congratulations! You beat the dealer's hand\n");
+        System.out.println(" Congratulations! You beat the dealer's hand\n");
     }
 
     public static void displayDealerWin() {
-        System.out.println("Tough luck! You lost to the dealer'n");
+        System.out.println(" Tough luck! You lost to the dealer'n");
     }
 
     public static void displayPush() {
-        System.out.println("The game is tied!\n");
+        System.out.println(" The game is tied!\n");
     }
 
     public static void displayBlackJackTie() {
-        System.out.println("You have blackjack!!! But so does the dealer...\n");
+        System.out.println(" You have blackjack!!! But so does the dealer...\n");
     }
 
     public static void displayBlackJackWin() {
-        System.out.println("You have blackjack. You won!!\n");
-        
+        System.out.println(" You have blackjack. You won!!\n");
+
     }
 
     public static void displayBlackJackLoss() {
-        System.out.println("Dealer has blackjack and you lose. Better luck next time.\n");
+        System.out.println(" Dealer has blackjack and you lose. Better luck next time.\n");
     }
 
     public static void displayPlayAgain() {
-        System.out.println("\nWould you like to play again? y/n");
+        System.out.println("\n Would you like to play again? y/n");
     }
 
     public static void displayGoodbye() {
-        System.out.println("Thank you for playing. Come back soon!\n");
+        System.out.println(" Thank you for playing. Come back soon!\n");
     }
 
     public static void displayInvalidInput() {
-        System.out.println("Invalid Selection. Try again.");
+        System.out.println(" Invalid Selection. Try again.");
     }
 
 }
