@@ -1,6 +1,6 @@
 # Blackjack Game
 
-Welcome to the Blackjack Game! This console-based Java program allows you to play the classic card game Blackjack against a computerized dealer. This project was created for my Java full stack boot camp in the We Can Code It! academy.
+Welcome to the Blackjack Game! This console-based Java program allows you to play the classic card game Blackjack against a computerized dealer. This project was created in a few days for my Java full-stack boot camp in the We Can Code It! academy.
 
 ## Project Focus
 
